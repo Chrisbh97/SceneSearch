@@ -1,0 +1,5 @@
+my_venv/
+__pycache__/
+*.mp4
+*.json
+models/
