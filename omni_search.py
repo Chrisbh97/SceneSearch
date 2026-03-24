@@ -45,6 +45,6 @@ def search_video(query, video_id):
             print(f"[{r['time']:>6.2f}s] [{r['source']:<7}] | {r['match']}")
 
 if __name__ == "__main__":
-    target_video = "cooking" # Change this to tedtalk or nature
+    target_video = "tedtalk" # Change this to tedtalk or nature
     user_query = input("Enter search term (e.g., 'cheese', 'microwave', 'talk'): ")
     search_video(user_query, target_video)
