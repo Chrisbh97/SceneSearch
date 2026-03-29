@@ -46,7 +46,8 @@ def ingest_video_data(video_id):
 
     print(f"✅ {video_id} indexed successfully.")
 
-# Run for your videos
-# ingest_video_data("cooking")
-ingest_video_data("tedtalk")
-# ingest_video_data("nature")
+if __name__ == "__main__":
+    import sys
+
+    vid = sys.argv[1] if len(sys.argv) > 1 else "tedtalk"
+    ingest_video_data(vid)
